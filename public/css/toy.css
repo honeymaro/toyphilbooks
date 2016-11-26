@@ -55,6 +55,7 @@
         z-index: 300;
         
         background-color: rgba(255, 255, 255, 1);
+        text-align: center;
         /*opacity: 0.8;
         background: rgba(0, 0, 0, 1);
         background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -63,55 +64,30 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 1)', endColorstr='rgba(0, 0, 0, 0)',GradientType=0 );*/
     }
 
-    .header .header-left{
-        width: auto;
-        height: 100%;
-        float: left;
+    .header .header-button-menu{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: transparent;
+        border: none;
+        color: #7b7c80;
+        cursor: pointer;
     }
 
-    .header .header-left .header-left-logo{
-        width: auto;
-        height: 100%;
-    }
+    .header .header-button-circle{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: transparent;
+        border: none;
+        border: 1.5px solid #7b7c80;
+        color: #7b7c80;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
 
-    .header .header-right{
-        width: auto;
-        height: 100%;
-        float: right;
-    }
-
-
-    .header .header-right .header-right-a{
-        width: auto;
-        height: 100%;
-        line-height: 60px;
-        display: inline-block;
-        color: #231f20;
-        /*color: #FFFFFF;*/
-        text-decoration: none;
-        /*padding: 0px 20px;*/
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: -1px;
-    }
-
-    .header .header-right .header-right-a.selected, .header .header-right .header-right-a:hover{
-        /*color: #91c73d;*/
-        opacity: 0.6;
-    }
-
-    .header .header-right .header-right-a::after{
-        content: "•";
-        font-size: 14px;
-        padding: 0px 15px;
-        margin-top: -53px;
-        display: inline-block;
-        color: #d3d3d3;
-        font-family: sans-serif;
-    }
-
-    .header .header-right .header-right-a:last-child::after{
-        content: "";
     }
 
     .view{
@@ -379,6 +355,17 @@
         width: 50;
         height: auto;
 
+    }
+
+    .upload .upload-detail-submit{
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+        background-color: #53B0AE;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px;
     }
 
     .upload .upload-detail .upload-detail-tag-list .upload-detail-tag{
