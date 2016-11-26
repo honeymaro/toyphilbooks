@@ -9,9 +9,9 @@ var path = require('path');
 
 /* GET home page. */
 
-// router.get('/', function(req, res, next) {
-//   viewFile(req, res, 'main');
-// });
+router.get('/', function(req, res, next) {
+  viewFile(req, res, 'main');
+});
 
 router.get('/app/signin', function(req, res, next){
   viewFile(req, res, 'signin');

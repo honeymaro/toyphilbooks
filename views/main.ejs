@@ -1,11 +1,89 @@
 <%- include header %>
 	<div class="main">
 		<span class="main-title">세상에 공유하는 나의 취미</span>
-		<button class="main-navigate-button">나만의 책 올리기</button>
-		<button class="main-navigate-button">다른 책 구경하기</button>
+		<button class="main-navigate-button" onclick="location.href='/upload';">나의 책 출판하기</button>
+		<button class="main-navigate-button" onclick="goBottom();">다른 책 구경하기</button>
+
+		<hr />
+
+		<span class="main-subTitle" id="section1">추천 도서 목록</span>
+		<div class="main-sample-list">
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/1.jpg');"/>
+				<span class="main-sample-list-item-title">폰케이스 데코 작법서</span>
+				<span class="main-sample-list-item-content">김성국 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/2.jpg');"/>
+				<span class="main-sample-list-item-title">세일러문의 비밀</span>
+				<span class="main-sample-list-item-content">김한슬마로 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/3.jpg');"/>
+				<span class="main-sample-list-item-title">인형 소품</span>
+				<span class="main-sample-list-item-content">조기상 인형사진집</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/4.jpg');"/>
+				<span class="main-sample-list-item-title">일본 키덜트 여행 가이드북</span>
+				<span class="main-sample-list-item-content">토이필 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/5.jpg');"/>
+				<span class="main-sample-list-item-title">쫄깃달콤! 젤리보고서</span>
+				<span class="main-sample-list-item-content">젤리연구소 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/6.jpg');"/>
+				<span class="main-sample-list-item-title">토이카 수집가의 장식장</span>
+				<span class="main-sample-list-item-content">김재형 찍고 기록하다</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/7.jpg');"/>
+				<span class="main-sample-list-item-title">호러무비강독</span>
+				<span class="main-sample-list-item-content">신예준 지음</span>
+			</div>
+		</div>
+		<span class="main-subTitle">신간 도서 목록</span>
+		<div class="main-sample-list">
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/1.jpg');"/>
+				<span class="main-sample-list-item-title">폰케이스 데코 작법서</span>
+				<span class="main-sample-list-item-content">김성국 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/2.jpg');"/>
+				<span class="main-sample-list-item-title">세일러문의 비밀</span>
+				<span class="main-sample-list-item-content">김한슬마로 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/3.jpg');"/>
+				<span class="main-sample-list-item-title">인형 소품</span>
+				<span class="main-sample-list-item-content">조기상 인형사진집</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/4.jpg');"/>
+				<span class="main-sample-list-item-title">일본 키덜트 여행 가이드북</span>
+				<span class="main-sample-list-item-content">토이필 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/5.jpg');"/>
+				<span class="main-sample-list-item-title">쫄깃달콤! 젤리보고서</span>
+				<span class="main-sample-list-item-content">젤리연구소 지음</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/6.jpg');"/>
+				<span class="main-sample-list-item-title">토이카 수집가의 장식장</span>
+				<span class="main-sample-list-item-content">김재형 찍고 기록하다</span>
+			</div>
+			<div class="main-sample-list-item">
+				<img class="main-sample-list-item-background" src="/img/32.png" style="background-image:url('/img/7.jpg');"/>
+				<span class="main-sample-list-item-title">호러무비강독</span>
+				<span class="main-sample-list-item-content">신예준 지음</span>
+			</div>
+		</div>
 	</div>
 
-	
 
 
 <%- include footer %>

@@ -113,6 +113,7 @@
         padding: 10px;
         background-color: #FFFFFF;
         border: 1px solid #d3d3d3;
+        cursor: pointer;
     }
 
     .view .view-logo img{
@@ -171,7 +172,7 @@
     }
 
     .view .view-menu-detail{
-        width: 250px;
+        width: 400px;
         height: 100%;
         display: inline-block;
         background-color: #f3f3f3;
@@ -249,14 +250,8 @@
         border: 1px solid #7b7c80;
     }
 
-    .view .view-page{
-        width: 48%;
+    .view .bb-item img{
         height: 100%;
-        padding: 0px;
-        margin: 0px;
-        border: 1px solid #d3d3d3;
-        display: inline-block;
-        background-color: #FFFFFF;  
     }
 
     .upload{
@@ -638,6 +633,112 @@
         text-decoration: none;
     }
 
+    .main{
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .main .main-title{
+        width: auto;
+        height: auto;
+        display: block;
+        font-size: 36px;
+        font-weight: 100;
+        margin: 20px;
+        margin-top: 60px;
+
+    }
+    .main .main-subTitle{
+        width: auto;
+        height: auto;
+        display: block;
+        font-size: 24px;
+        font-weight: 100;
+        margin: 20px;
+
+    }
+
+    .main hr{
+        width: 0px;
+        padding: 0px 3%;
+        margin-left: 47%;
+        border: 1px solid #53B0AE;
+        margin-bottom: 120px;
+        margin-top: 120px;
+    }
+
+    .main .main-navigate-button{
+        background-color: transparent;
+        border: 1px solid #7b7c80;
+        color: #7b7c80;
+        padding: 10px 20px;
+        font-size: 24px;
+        margin-bottom: 40px;
+        cursor: pointer;
+
+    }
+    
+    .main .main-navigate-button:hover{
+        border: 1px solid #53B0AE;
+        color: #53B0AE;
+        
+    }    
+    .main .main-sample-list{
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .main .main-sample-list .container{
+        overflow: visible;
+    }
+
+    .main .main-sample-list .main-sample-list-item{
+        width: 40%;
+        height: auto;
+        margin-right: 10px;
+        max-width: 200px;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .main .main-sample-list .main-sample-list-item .main-sample-list-item-background{
+        width: 100%;
+        background-image: url('/img/1_9.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+
+    }
+
+    .main .main-sample-list .main-sample-list-item .main-sample-list-item-title{
+        font-weight: 700;
+        width: 100%;
+        display: block;
+        text-overflow: ellipsis;
+        /*position: absolute;
+        left: 0px;
+        top: 30%;*/
+        /*text-align: center;*/
+    }
+
+    .main .main-sample-list .main-sample-list-item .main-sample-list-item-content{
+        font-weight: 100;
+        width: 100%;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden !important;
+        /*position: absolute;
+        left: 0px;
+        bottom: 30%;
+        text-align: center;*/
+    }
+
 
     .footer{
         width: 100%;
@@ -736,6 +837,50 @@
     pre{
         font-family: 'KBIZ', sans-serif;
         
+    }
+
+    
+        /* Let's get this party started */
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    /* Track */
+    *::-webkit-scrollbar-track {
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    *::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: transparent; 
+        /*background: #d3d3d3;*/
+        
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    *:hover::-webkit-scrollbar-thumb{
+        background: #d3d3d3; 
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }    
+
+    *::-webkit-scrollbar-thumb:window-inactive {
+        background: transparent;
+        /*background: #d3d3d3;*/
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
     
 }

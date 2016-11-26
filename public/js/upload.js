@@ -6,6 +6,11 @@ $(document).ready(function(){
 		}
 	});
 
+	$('body').on('click', '.upload-detail-thumbnail', function(){
+		$('.upload-detail-thumbnail').removeClass('selected');
+		$(this).addClass('selected');
+	})
+
 	$('body').on('change', '#upload-file', function(){
 		$('.upload-before').hide();
 		$('.upload-detail').show();
