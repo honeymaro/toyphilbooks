@@ -47,6 +47,7 @@ app.use('/api', proxy(global.api_url, {
     return proxyReq;
   }
 }));
+
 app.use('/', routes);
 
 // catch 404 and forward to error handler
