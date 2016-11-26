@@ -151,14 +151,28 @@
         right: 0px;
         top: 0px;
         z-index: 508;
+        opacity: 0.6;
+
+        cursor: pointer;
 
         -ms-transform: translateX(100%) translateX(-50px);
         -webkit-transform: translateX(100%) translateX(-50px);
         transform: translateX(100%) translateX(-50px);
+
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .view .view-menu:hover{
+        opacity: 0.8;
+        
     }
 
     .view .view-menu.selected{
-        
+        opacity: 1;
+        cursor: auto;
+
         -ms-transform: translateX(0);
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -173,7 +187,7 @@
         top: 120px;
         left: 0px;
         text-align: center;
-        background-color: #d3d3d3;
+        background-color: #f3f3f3;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
 
@@ -183,7 +197,7 @@
         width: 250px;
         height: 100%;
         display: inline-block;
-        background-color: #d3d3d3;
+        background-color: #f3f3f3;
         padding: 10px;
         margin-left: 50px;
     }
@@ -268,6 +282,116 @@
         background-color: #FFFFFF;  
     }
 
+    .upload{
+        width: 100%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        height: auto;
+        position: relative;
+        text-align: center;
+
+    }
+
+    .upload .upload-title{
+        display: block;
+        font-weight: 400;
+        font-size: 36px;
+        padding-bottom: 20px;
+
+    }
+
+    .upload .upload-file{
+        display: none;
+
+    }
+
+    .upload .upload-file_button{
+        width: auto;
+        height: auto;
+        /*display: block;*/
+        background-color: #FFFFFF;
+        border: 1px solid #53B0AE;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .upload .upload-file_or{
+        font-size: 14px;
+    }
+    
+    .upload .upload-detail{
+        width: 100%;
+        height: auto;
+        position: relative;
+
+    }
+
+
+    .upload .upload-detail{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 120px;
+    }
+    
+    .upload .upload-detail .upload-detail-thumbnail-list{
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .upload .upload-detail .upload-detail-thumbnail-list .upload-detail-thumbnail{
+        width: 40%;
+        height: auto;
+        margin-right: 10px;
+        max-width: 200px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .upload .upload-detail .upload-detail-thumbnail-list .upload-detail-thumbnail .upload-detail-thumbnail-background{
+        width: 100%;
+        background-image: url('/img/1_9.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+
+    }
+
+    .upload .upload-detail .upload-detail-subject{
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .upload .upload-detail .upload-detail-content{
+        display: block;
+        font-weight: 100;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .upload .upload-detail .upload-detail-tag-list{
+        width: 50;
+        height: auto;
+
+    }
+
+    .upload .upload-detail .upload-detail-tag-list .upload-detail-tag{
+        width: auto;
+        display: inline-block;
+        margin: 5px;
+        padding: 5px 10px;
+        font-size: 20px;
+        background-color: #FFFFFF;
+        border: 1px solid #53B0AE;
+        border-radius: 5px;
+    }
+
 
     .footer{
         width: 100%;
@@ -311,14 +435,15 @@
         display: block;
     }
 
-    input[type="text"]{
+    input[type="text"], textarea{
         width: auto;
         height: auto;
         border-radius: 5px;
-        padding: 6px 11px;
+        padding: 10px 20px;
         color: #231f20;
         background-color: #FFFFFF;
         border: 1px solid #d3d3d3;
+        font-size: 16px;
         /*margin-top: 1px;
         margin-bottom: 1px;*/
     }

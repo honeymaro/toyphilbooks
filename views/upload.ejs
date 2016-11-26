@@ -1,0 +1,60 @@
+<%- include header %>
+	<div class="upload">
+		<div class="container">
+			<span class="upload-title">ㄹㅇㄴㅁ</span>
+			<input type="file" id="upload-file" class="upload-file"/>
+			<label class="upload-file_button" for="upload-file">+ 파일 선택하기</label>
+			<span class="upload-file_or">또는 끌어오기</span>
+			<div class="upload-detail">
+				<!--<div class="upload-detail-thumbnail-list">
+					
+					<div class="upload-detail-thumbnail selected"></div>
+					<div class="upload-detail-thumbnail"></div>
+				</div>-->
+				<span class="upload-detail-subject">책 표지 선택</span>
+				
+				<div class="upload-detail-thumbnail-list">
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/1.jpg');"/>
+					</div>
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/2.jpg');"/>
+					</div>
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/3.jpg');"/>
+					</div>
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/4.jpg');"/>
+					</div>
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/5.jpg');"/>
+					</div>
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/6.jpg');"/>
+					</div>
+					<div class="upload-detail-thumbnail">
+						<img class="upload-detail-thumbnail-background" src="/img/32.png" style="background-image:url('/img/1.jpg');"/>
+					</div>
+				</div>
+
+				<span class="upload-detail-subject">제목</span>
+				<input type="text" class="upload-detail-input-text" placeholder="책의 이름을 입력해주세요." style="width: 50%;"/>
+				<span class="upload-detail-subject">저자명</span>
+				<input type="text" class="upload-detail-input-text" placeholder="책의 저자명을 입력해주세요." style="width: 50%;"/>
+				<span class="upload-detail-subject">책 설명</span>
+				<textarea class="upload-detail-input-text" placeholder="책을 자세히 소개해주세요." style="width: 50%;" rows="10"></textarea>
+				<span class="upload-detail-subject">#태그</span>
+				<span class="upload-detail-content">태그를 입력하면 좀 더 취향에 맞는 독자에게 책을 소개할 수 있어요!<br />엔터를 눌러 추가할 수 있습니다.</span>
+				<div class="upload-detail-tag-list">
+					<span class="upload-detail-tag">젤리</span>
+					<span class="upload-detail-tag">젤리</span>
+					<span class="upload-detail-tag">젤리</span>
+					<span class="upload-detail-tag">젤리</span>
+					<input type="text" class="upload-detail-input-text" id="upload-detail-input-tag" style="width: 120px; margin-bottom: 2px; padding: 8px 10px;"/>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<%- include footer %>

@@ -21,6 +21,10 @@ router.get('/view', function(req, res, next){
   viewFile(req, res, 'view');
 });
 
+router.get('/upload', function(req, res, next){
+  viewFile(req, res, 'upload');
+})
+
 // router.get('/app/pdf/:id', function(req, res, next){
 //   var input   = __dirname +'\\..\\public\\' + req.params.id+'.pdf';
 //   console.log(input);
