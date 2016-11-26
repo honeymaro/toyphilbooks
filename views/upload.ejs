@@ -1,11 +1,13 @@
 <%- include header %>
 	<div class="upload">
 		<div class="container">
-			<span class="upload-title">ㄹㅇㄴㅁ</span>
-			<input type="file" id="upload-file" class="upload-file"/>
-			<label class="upload-file_button" for="upload-file">+ 파일 선택하기</label>
-			<span class="upload-file_or">또는 끌어오기</span>
-			<div class="upload-detail">
+			<div class="upload-before">
+				<span class="upload-title">출판하고 싶은 책을 선택해주세요.</span>
+				<input type="file" id="upload-file" class="upload-file"/>
+				<label class="upload-file_button" for="upload-file">+ 파일 선택하기</label>
+				<span class="upload-file_or">또는 끌어오기</span>
+			</div>
+			<div class="upload-detail" style="display: none;">
 				<!--<div class="upload-detail-thumbnail-list">
 					
 					<div class="upload-detail-thumbnail selected"></div>
@@ -46,10 +48,6 @@
 				<span class="upload-detail-subject">#태그</span>
 				<span class="upload-detail-content">태그를 입력하면 좀 더 취향에 맞는 독자에게 책을 소개할 수 있어요!<br />엔터를 눌러 추가할 수 있습니다.</span>
 				<div class="upload-detail-tag-list">
-					<span class="upload-detail-tag">젤리</span>
-					<span class="upload-detail-tag">젤리</span>
-					<span class="upload-detail-tag">젤리</span>
-					<span class="upload-detail-tag">젤리</span>
 					<input type="text" class="upload-detail-input-text" id="upload-detail-input-tag" style="width: 120px; margin-bottom: 2px; padding: 8px 10px;"/>
 
 				</div>

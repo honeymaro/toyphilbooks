@@ -72,6 +72,7 @@
         border: none;
         color: #7b7c80;
         cursor: pointer;
+        margin: 5px;
     }
 
     .header .header-button-circle{
@@ -87,7 +88,7 @@
         height: 30px;
         border-radius: 50%;
         cursor: pointer;
-
+        margin: 5px;
     }
 
     .view{
@@ -268,6 +269,14 @@
 
     }
 
+    .upload .upload-before{
+        width: 100%;
+        height: auto;
+
+        padding: 200px 0px;
+
+    }
+
     .upload .upload-title{
         display: block;
         font-weight: 400;
@@ -326,7 +335,13 @@
         max-width: 200px;
         position: relative;
         display: inline-block;
+        border: 4px solid transparent;
+        cursor: pointer;
     }
+
+    .upload .upload-detail .upload-detail-thumbnail-list .upload-detail-thumbnail.selected{
+        border: 4px solid #53B0AE;
+    }    
 
     .upload .upload-detail .upload-detail-thumbnail-list .upload-detail-thumbnail .upload-detail-thumbnail-background{
         width: 100%;
@@ -362,10 +377,12 @@
         height: auto;
         padding: 10px 20px;
         background-color: #53B0AE;
+        color: #FFFFFF;
         border: none;
         border-radius: 5px;
         font-size: 20px;
         margin: 20px;
+        cursor: pointer;
     }
 
     .upload .upload-detail .upload-detail-tag-list .upload-detail-tag{
@@ -377,6 +394,248 @@
         background-color: #FFFFFF;
         border: 1px solid #53B0AE;
         border-radius: 5px;
+    }
+
+    
+    .sign{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 500;
+        left: 0px;
+        top: 0px;
+        background-color: #edeeef;
+        overflow: hidden;
+    }
+
+    .sign .sign-top{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: block;
+        text-align: center;
+        padding: 20px 0px;
+        z-index: 501;
+    }
+
+    .sign .sign-top .sign-top-logo{
+        width: auto;
+        height: 100%;
+        /*float: center;*/
+    }
+
+    .sign .sign-top-goback{
+        width: 40px;
+        height: 40px;
+        float: left;
+        cursor: pointer;
+        color: #53B0AE;
+        /*display: block;*/
+        /*padding: 10px;*/
+        line-height: 40px;
+        border: 2px solid #53B0AE;
+        border-radius: 50%;
+        vertical-align: middle;
+        text-align: center;
+        /*margin-top: 20px;*/
+        position: absolute;
+        padding-top: 2px;
+        padding-right: 2px;
+        margin-top: 2px;
+    }
+
+    /*.sign .sign-top .sign-top-close img{
+        width: auto;
+        height: 30px;
+    }*/
+
+    .sign .sign-content{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        padding-top: 120px;
+        /*padding-bottom: 80px;*/
+        left: 0px;
+        top: 0px;
+    }
+
+    .sign .sign-content .container{
+        max-width: 480px;
+        overflow: visible;
+    }
+
+    .sign .sign-content .sign-content-inside{
+        width: auto;
+        height: auto;
+        display: block;
+        background-color: #FFFFFF;
+        /*border: 2px solid #7b7c80;*/
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px #7b7c80;
+        padding: 20px;
+        
+    }
+
+    .sign .sign-content .sign-content-inside .sign-content-inside-html{
+        width: auto;
+        height: auto;
+        overflow-y: auto;
+        
+        
+    }
+
+    .sign .sign-title{
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        color: #231f20;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .sign .sign-context{
+        width: 100%;
+        height: 100%;
+        display: block;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .sign .sign-input-text{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border: 1px solid #53B0AE;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+
+    .sign .sign-input-check{
+        width: auto;
+        height: auto;
+        display: none;
+    }
+    .sign .sign-label-check{
+        color: #7b7c80;
+        margin-bottom: 20px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .sign .sign-label-check div{
+        width: 24px;
+        height: 24px; 
+        /*padding: 12px;*/
+        vertical-align: middle;
+        display: inline-block; 
+        border: 2px solid #d3d3d3; 
+        border-radius: 4px; 
+        background-size: cover;
+        margin: 0px 5px;
+    }
+    
+    .sign .sign-input-combo{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border: 1px solid #53B0AE;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .sign .sign-input-check:checked + .sign-label-check div{
+        background-image: url('/img/check.png');
+    }
+
+    .sign .sign-button{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border: none;
+        background-color: #53B0AE;
+        color: #FFFFFF;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .sign .sign-button:disabled{
+        background-color: #d3d3d3;
+    }
+
+    /* Let's get this party started */
+    .sign *::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    /* Track */
+    .sign *::-webkit-scrollbar-track {
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    .sign *::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        /*background: transparent; */
+        background: #FFFFFF;
+        
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .sign .sign-content .sign-content-inside .sign-content-inside-html:hover::-webkit-scrollbar-thumb{
+        background: #dadce0; 
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }    
+
+    .sign *::-webkit-scrollbar-thumb:window-inactive {
+        /*background: transparent;*/
+        background: #FFFFFF;
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .sign .sign-bottom{
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        line-height: 80px;
+        color: #7b7c80;
+        text-align: center;
+        font-size: 14px;
+        display: block;
+    }
+
+    .sign .sign-a{
+        width: auto;
+        height: auto;
+        color: #53B0AE;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -1px;
+        text-decoration: none;
     }
 
 
