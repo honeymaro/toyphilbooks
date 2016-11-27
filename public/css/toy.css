@@ -189,7 +189,7 @@
 
     .view .view-menu-detail .view-menu-detail-info .view-menu-detail-info-thumbnail{
         width: 180px;
-        height: 180px;
+        /*height: 180px;*/
         border: 1px solid #d3d3d3;
         
     }
@@ -210,7 +210,7 @@
         font-size: 16px;
     }
 
-    .view .view-menu-detail .view-menu-detail-buy{
+    .view .view-menu-detail-buy{
         width: 100%;
         height: auto;
         display: block;
@@ -218,7 +218,7 @@
         
     }
 
-    .view .view-menu-detail .view-menu-detail-buy .view-menu-detail-buy-button{
+    .view .view-menu-detail-buy .view-menu-detail-buy-button{
         width: 100%;
         height: auto;
         padding: 10px;
@@ -683,7 +683,7 @@
         color: #53B0AE;
         
     }    
-    .main .main-sample-list{
+    .main-sample-list{
         width: 100%;
         height: auto;
         position: relative;
@@ -692,21 +692,21 @@
         white-space: nowrap;
     }
 
-    .main .main-sample-list .container{
+    .main-sample-list .container{
         overflow: visible;
     }
 
-    .main .main-sample-list .main-sample-list-item{
+    .main-sample-list .main-sample-list-item{
         width: 40%;
         height: auto;
         margin-right: 10px;
-        max-width: 200px;
+        max-width: 220px;
         position: relative;
         display: inline-block;
         cursor: pointer;
     }
 
-    .main .main-sample-list .main-sample-list-item .main-sample-list-item-background{
+    .main-sample-list .main-sample-list-item .main-sample-list-item-background{
         width: 100%;
         background-image: url('/img/1_9.png');
         background-repeat: no-repeat;
@@ -715,18 +715,20 @@
 
     }
 
-    .main .main-sample-list .main-sample-list-item .main-sample-list-item-title{
+    .main-sample-list .main-sample-list-item .main-sample-list-item-title{
         font-weight: 700;
         width: 100%;
         display: block;
         text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden !important;
         /*position: absolute;
         left: 0px;
         top: 30%;*/
         /*text-align: center;*/
     }
 
-    .main .main-sample-list .main-sample-list-item .main-sample-list-item-content{
+    .main-sample-list .main-sample-list-item .main-sample-list-item-content{
         font-weight: 100;
         width: 100%;
         display: block;
